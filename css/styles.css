@@ -30,6 +30,24 @@ h3 {
     color: #333;
 }
 
+.title-underline {
+    display: inline-block;
+    position: relative;
+    /* padding-bottom: 8px; */
+    text-align: left;
+}
+
+.title-underline::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: linear-gradient(to right, #72c1e8 50%, #f0c020 50%);
+    margin-top: 5px;
+    border-radius: 2px;
+    text-align: left;
+}
+
 .section {
     background: white;
     padding: 30px;
@@ -67,6 +85,11 @@ h3 {
     border-radius: 8px;
     margin-top: 10px;
     color: black;
+}
+
+.about-me h2 {
+    text-align: left;
+    width: 100%;
 }
 
 .about-me img {
