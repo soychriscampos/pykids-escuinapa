@@ -101,6 +101,10 @@ h3 {
     text-align: center !important;
 }
 
+.social_icons img {
+    width: 32px;
+}
+
 footer {
     font-size: 12px;
     background: #333;
