@@ -108,6 +108,12 @@ h3 {
     transform: scale(1.05);
 }
 
+.glightbox-clean .gdesc-inner {
+    text-align: center;
+}
+
+/**/
+
 
 .about-me h2 {
     text-align: left;

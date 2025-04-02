@@ -29,8 +29,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Lightbox2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
 </head>
 
@@ -130,21 +130,22 @@
         <section class="section gallery">
             <h2 class="title-underline">Momentos PyKids</h2>
             <div class="gallery-grid">
-                <a href="assets/pykids1.jpg" data-lightbox="pykids" data-title="Bienvenida a PyKids">
-                    <img src="assets/pykids1.jpg" alt="Bienvenida a PyKids">
+                <a href="assets/pykids1.jpg" class="glightbox" data-title="¡Bienvenida a PyKids Escuinapa! 🎉🙌✨">
+                    <img src="assets/pykids1.jpg" alt="¡Bienvenida a PyKids!">
                 </a>
-                <a href="assets/pykids2.jpg" data-lightbox="pykids"
-                    data-title="Explicando como funciona la calculadora">
-                    <img src="assets/pykids2.jpg" alt="Christian Campos Explicando como funciona la calculadora">
+                <a href="assets/pykids2.jpg" class="glightbox"
+                    data-title="Explicando como funciona una calculadora a nivel programación. 📱">
+                    <img src="assets/pykids2.jpg"
+                        alt="Christian Campos explicando como funciona una calculadora a nivel programación">
                 </a>
-                <a href="assets/pykids3.jpg" data-lightbox="pykids" data-title="Diego Programando">
+                <a href="assets/pykids3.jpg" class="glightbox" data-title="Diego Programando. 👦💻">
                     <img src="assets/pykids3.jpg" alt="Alumno PyKids programando">
                 </a>
-                <a href="assets/pykids4.jpg" data-lightbox="pykids"
-                    data-title="Alexandra y Valentina programando su primera calculadora">
+                <a href="assets/pykids4.jpg" class="glightbox"
+                    data-title="Alexandra y Valentina programando su primera calculadora. 👧💻 👧💻">
                     <img src="assets/pykids4.jpg" alt="Alumnas pykids programando su primera calculadora">
                 </a>
-                <a href="assets/pykids5.jpg" data-lightbox="pykids" data-title="PyKids Semana 2">
+                <a href="assets/pykids5.jpg" class="glightbox" data-title="PyKids Semana 2. 🚀💻">
                     <img src="assets/pykids5.jpg" alt="PyKids Semana 2">
                 </a>
             </div>
@@ -205,9 +206,16 @@
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
     </script>
-    <!-- Lightbox2 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            zoomable: false
+        });
+    </script>
 </body>
 
 </html>
