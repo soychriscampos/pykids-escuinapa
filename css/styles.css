@@ -112,6 +112,26 @@ h3 {
     text-align: center;
 }
 
+.extra-images {
+    display: none;
+}
+
+#show-more-btn {
+    margin-top: 20px;
+    background: #f0c020;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#show-more-btn:hover {
+    background: #dca916;
+}
+
 /**/
 
 

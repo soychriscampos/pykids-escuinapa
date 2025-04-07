@@ -32,6 +32,7 @@
     <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
+
 </head>
 
 <body>
@@ -64,9 +65,10 @@
             </p>
 
             <p>PyKids Escuinapa busca cerrar esta brecha digital y marcar un precedente al ser pionero en Escuinapa y en
-                el estado, al ofrecer un taller que introduce la programación desde edades tempranas. La misión es
-                mostrarles que pueden ser creadores de tecnología, no solo consumidores, y motivarlos a descubrir nuevas
-                oportunidades en la ciencia y la innovación.</p>
+                el estado, al ofrecer un taller que introduce la programación con Python de forma directa y práctica,
+                escribiendo código real desde edades tempranas. La misión es mostrarles que pueden ser creadores de
+                tecnología, no solo consumidores, y motivarlos a descubrir nuevas oportunidades en la ciencia y la
+                innovación.</p>
 
         </section>
         <section class="section">
@@ -153,7 +155,33 @@
                     data-title="Mensaje de la comunidad Python Latinoamérica para los niños por Ph.D. in Artificial Intelligence Eduardo Ramírez 🧠🤖">
                     <img src="assets/pykids6.jpg" alt="Mensaje de la comunidad Python Latinoamérica Eduardo Ramírez">
                 </a>
+                <a href="assets/pykids7.jpg" class="glightbox extra-image"
+                    data-title="Consolidando lo aprendido: repasando conceptos clave. 🧠💪 ">
+                    <img src="assets/pykids7.jpg" alt="Consolidando lo aprendido: repasando conceptos clave.">
+                </a>
+                <a href="assets/pykids8.jpg" class="glightbox extra-image"
+                    data-title="Diego y Hansel concentrados en la actividad del día. 🎯🧠">
+                    <img src="assets/pykids8.jpg" alt="Diego y Hansel concentrados en la actividad del día.">
+                </a>
+                <a href="assets/pykids9.jpg" class="glightbox extra-image"
+                    data-title="Mayant y Alexandra aplicando las nuevas funciones aprendidas. 🖥️">
+                    <img src="assets/pykids9.jpg" alt="Mayant y Alexandra aplicando las nuevas funciones aprendidas.">
+                </a>
+                <a href="assets/pykids10.jpg" class="glightbox extra-image"
+                    data-title="Mensaje de la comunidad Python Latinoamérica para los niños: Desde Bolivia, Ing. Tatiana Delgadillo, comparte con los niños su experiencia de cómo inició en la programación a los 12 años. 🇧🇴👩‍💻">
+                    <img src="assets/pykids10.jpg"
+                        alt="Mensaje de la comunidad Python Latinoamérica para los niños: Desde Bolivia, Ing. Tatiana Delgadillo, comparte con los niños su experiencia de cómo inició en la programación a los 12 años.">
+                </a>
+                <a href="assets/pykids11.jpg" class="glightbox extra-image"
+                    data-title="Explicándoles cómo funcionan los índices en Python. 🔢 ">
+                    <img src="assets/pykids11.jpg" alt="Explicándoles cómo funcionan los índices en Python.">
+                </a>
+                <a href="assets/pykids12.jpg" class="glightbox extra-image"
+                    data-title="Cerrando la semana 2 en PyKids Escuinapa. 🎉🐍">
+                    <img src="assets/pykids12.jpg" alt="Cerrando la semana 2 en PyKids Escuinapa.">
+                </a>
             </div>
+            <button id="show-more-btn" class="button">Ver +</button>
         </section>
         <section class="section about-me">
             <img src="assets/profile.jpg" alt="Christian Campos">
@@ -221,6 +249,22 @@
             zoomable: false
         });
     </script>
+
+    <!--extra-images-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const extraImages = document.querySelectorAll('.extra-image');
+            const showMoreBtn = document.getElementById('show-more-btn');
+
+            extraImages.forEach(img => img.style.display = 'none');
+
+            showMoreBtn.addEventListener('click', () => {
+                extraImages.forEach(img => img.style.display = 'inline-block');
+                showMoreBtn.style.display = 'none';
+            });
+        });
+    </script>
+
 </body>
 
 </html>
