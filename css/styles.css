@@ -30,6 +30,20 @@ h3 {
     color: #333;
 }
 
+.section a {
+    color: #f0c020;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.section a:hover {
+    color: #72c1e8;
+    border-bottom: 2px solid #72c1e8;
+}
+
+
 .title-underline {
     display: inline-block;
     position: relative;
